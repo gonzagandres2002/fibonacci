@@ -32,4 +32,8 @@ public class FibonacciService {
         fibonacciSeries.setSeries(series);
         repository.save(fibonacciSeries);
     }
+
+    public List<FibonacciSeries> getGeneratedSeries() {
+        return repository.findAll();
+    }
 }
